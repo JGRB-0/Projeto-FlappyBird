@@ -93,6 +93,8 @@ function Passaro(alturaDoJogo) {
 
     window.onkeydown = event => voando = true
     window.onkeyup = event => voando = false
+    window.ontouchstart = event => voando = true
+    window.ontouchend = event => voando = false
 
     this.animar = () => {
         const novoY = this.getY() + (voando ? 8 : -5)
