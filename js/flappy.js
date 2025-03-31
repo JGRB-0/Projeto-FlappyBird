@@ -91,8 +91,11 @@ function Passaro(alturaDoJogo) {
 
     this.setY = y => this.element.style.bottom = `${y}px`
 
+    // eventos do teclado
     window.onkeydown = event => voando = true
     window.onkeyup = event => voando = false
+    
+    // eventos do celular
     window.ontouchstart = event => voando = true
     window.ontouchend = event => voando = false
 
